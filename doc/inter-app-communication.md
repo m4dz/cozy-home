@@ -6,7 +6,7 @@ Product team have [identified some use cases](https://bimestriel.framapad.org/p/
 
 1. The user is redirected to another app to perform an action (pick, create, ...), eventually some Data is passed along. When the action is done, the user comes back to the first app. It's a back and forth communication
 2. The user is redirected to another app but isnt expected to come back to the first. Data can be passed along, it's a single way to pass data
-3. Data needs to be accessed in read-only mode: it's a given permission in RO given to the app at installation
+3. Data needs to be accessed in read-only mode: permission in read-only (RO) given to the app at installation
 
 _1_ and _2_ are two forms of intents, probably defined using our own API inspired by standards (see Annexes/Intent APIs). The only difference is in the case of _1_, we expect a _returnValue_ from app B.
 Note : the return value can be only "ok, it's done" (_1a_), an actual value (_1b_) or a "pointer" to some data (_1c_).
